@@ -2,7 +2,6 @@ import C from "../constants";
 import { ClientProxy } from "@nestjs/microservices";
 import { Inject, Logger } from "@nestjs/common";
 import { InjectQueue, OnQueueActive, OnQueueError, OnQueueFailed, Process, Processor } from "@nestjs/bull";
-import { RedisService } from "./redis.service";
 import { Job, Queue } from "bull";
 import { User } from "models";
 
@@ -11,7 +10,6 @@ export class RedisProcessor {
     private readonly logger = new Logger(RedisProcessor.name);
 
     constructor(
-        private redisService: RedisService,
         @Inject(C.WS_GATEWAY_SERVICE_NAME) private wsGatewayService: ClientProxy,
         @InjectQueue("redis") private readonly redisQueue: Queue
     ) {}
@@ -39,9 +37,7 @@ export class RedisProcessor {
 
         const start = performance.now();
         try {
-            if (randomPartner) {
-                this.wsGatewayService.emit("random-partner-found", {});
-            }
+            this.wsGatewayService.emit("random-partner-found", {});
         } catch (error) {
             this.logger.error(`[RANDOM-PARTNER-SEARCH ERROR] Error searching for partner - reason: ${error.message}`);
         }
