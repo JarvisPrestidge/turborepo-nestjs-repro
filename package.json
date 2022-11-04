@@ -1,0 +1,39 @@
+{
+  "name": "moonchat",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "postinstall": "manypkg check"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@7.14.0",
+  "dependencies": {
+    "@manypkg/cli": "^0.19.2",
+    "prettier": "latest",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.5.7",
+    "turbo": "latest"
+  },
+  "add-these-to-dependencies-to-fix": {
+    "@changesets/cli": "^2.25.2",
+    "@nestjs/bull": "^0.6.1",
+    "@nestjs/common": "^9.1.6",
+    "@nestjs/config": "^2.2.0",
+    "@nestjs/core": "^9.1.6",
+    "@nestjs/microservices": "^9.1.6",
+    "@nestjs/platform-fastify": "^9.1.6",
+    "@nestjs/platform-ws": "^9.1.6",
+    "@nestjs/websockets": "^9.1.6",
+    "bull": "^4.10.1"
+  }
+}

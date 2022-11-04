@@ -1,0 +1,19 @@
+{
+    "name": "eslint-config-moonchat",
+    "version": "0.0.0",
+    "private": true,
+    "files": [
+        "nest.json",
+        "next.json"
+    ],
+    "dependencies": {
+        "eslint": "^8.26.0",
+        "eslint-config-next": "^12.3.2",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-config-turbo": "latest",
+        "eslint-plugin-react": "7.31.8"
+    },
+    "devDependencies": {
+        "typescript": "^4.8.4"
+    }
+}

@@ -1,0 +1,35 @@
+export default class Constants {
+    static readonly SERVER_PORT = 3000;
+    static readonly SERVER_DOMAIN = "localhost";
+    static readonly PARTNER_SERVICE_NAME = "PARTNER_SERVICE";
+    static readonly REDIS_SEARCH_INDEX_NAME = "search_idx";
+    static readonly REDIS_AGE_FIELD_NAME = "age";
+    static readonly REDIS_PARTNER_AGE_MIN_FIELD_NAME = "p_age_min";
+    static readonly REDIS_PARTNER_AGE_MAX_FIELD_NAME = "p_age_max";
+    static readonly REDIS_GENDER_FIELD_NAME = "gender";
+    static readonly REDIS_PARTNER_GENDER_FIELD_NAME = "p_gender";
+    static readonly REDIS_INTERESTS_FIELD_NAME = "interests";
+    static readonly REDIS_PARTNER_INTERESTS_FIELD_NAME = "p_interests";
+    static readonly REDIS_COUNTRY_FIELD_NAME = "country";
+    static readonly REDIS_PARTNER_COUNTRY_FIELD_NAME = "p_country";
+    static readonly REDIS_LANGUAGE_FIELD_NAME = "lang";
+    static readonly REDIS_PARTNER_LANGUAGE_FIELD_NAME = "p_lang";
+    static readonly REDIS_PARTNERS_FIELD_NAME = "partners";
+    static readonly REDIS_VERIFIED_FIELD_NAME = "verified";
+    static readonly REDIS_GOLD_FIELD_NAME = "gold";
+    static readonly ENV_JWT_SECRET = "JWT_SECRET";
+    static readonly ENV_JWT_EXPIRES_IN = "JWT_EXPIRES_IN";
+    static readonly ENV_OAUTH_GOOGLE_CLIENT_ID = "OAUTH_GOOGLE_CLIENT_ID";
+    static readonly ENV_OAUTH_GOOGLE_CLIENT_SECRET = "OAUTH_GOOGLE_CLIENT_SECRET";
+    static readonly ENV_OAUTH_GOOGLE_REDIRECT_URL = "OAUTH_GOOGLE_REDIRECT_URL";
+    static readonly ENV_REDIS_HOST = "REDIS_HOST";
+    static readonly ENV_REDIS_PORT = "REDIS_PORT";
+    static readonly ENV_REDIS_USERNAME = "REDIS_USER";
+    static readonly ENV_REDIS_PASSWORD = "REDIS_PASSWORD";
+    static readonly ENV_REDIS_CACHE_TTL = "REDIS_CACHE_TTL";
+    static readonly USER_AGENT = "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36";
+    static readonly PROJECT_ROOT_PATH: string;
+    static readonly PROJECT_APPS_PATH: string;
+    static readonly PROJECT_OUTPUT_PATH: string;
+    static readonly PROJECT_RESOURCES_PATH: string;
+}

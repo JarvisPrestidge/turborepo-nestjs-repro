@@ -1,0 +1,15 @@
+{
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "{src,test}/**/**/bin": true,
+        "{src,test}/**/**/obj": true,
+        "**/*.marko.js": false,
+        "**/**/obj": true,
+        "**/node_modules": false
+    }
+}
